@@ -1,0 +1,45 @@
+body
+{
+	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://th.bing.com/th/id/OIP.lhr_ZfWuEHgO6Ig4Ic8U7gHaK1?w=116&h=180&c=7&o=5&pid=1.7");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+}
+
+h1
+{
+	color: brown;
+}
+
+h5
+{
+	color: darkmagenta;
+}
+
+#ibm_certificate_0
+{
+	border: 3px solid black;
+	border-radius: 12px;
+	margin: 10px;
+}
+
+.card
+{
+	margin-left: 530px;
+}
+
+.page_links
+{
+	font-weight: bold;
+	color: white;
+}
+
+#cs50_certificate_1
+{
+	border: 3px solid black;
+	border-radius: 12px;
+	width: 800px;
+	margin: 10px;
+}
