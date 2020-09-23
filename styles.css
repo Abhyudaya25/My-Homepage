@@ -3,7 +3,7 @@ body
 	background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("https://th.bing.com/th/id/OIP.bwhGlOlSJSQu6mqk4ccmmAHaEo?w=254&h=180&c=7&o=5&pid=1.7");
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: cover;
+	background-size: 100% 100%;
 	background-attachment: fixed;
 }
 
@@ -28,9 +28,43 @@ h1
     color: #063c94;
 }
 
-.card
-{
-    margin-left: 500px;
+@media only screen and (min-width: 950px) {
+		.card {
+			margin-left: 540px;
+		}
+
+		.photo_div {
+			margin-left: 100px !important;
+		}
+}
+
+@media only screen and (max-width: 949px) {
+		.card {
+			margin-left: 340px;
+		}
+
+		.photo_div {
+			margin-left: 100px !important;
+		}
+}
+
+@media only screen and (max-width: 768px) {
+		.card {
+				margin-left: 150px;
+		}
+
+		.col {
+			width: 100%;
+		}
+
+		.photo_div {
+			margin-left: 50px !important;
+		}
+}
+
+.card {
+		float: center;
+		width: 18rem;
 }
 
 .my_photo
@@ -46,99 +80,88 @@ h1
     width: 1300px;
     border: 2px solid blue;
     border-radius: 12px;
-	padding: 10px;
+		padding: 10px;
     margin: 30px;
+		background-color: lightBlue;
 }
 
-#photo0
+.photo_div h2 {
+	color: darkBlue;
+}
+
+#photo0 .row .col
+{
+	text-align: left;
+}
+
+#photo0 .row .col img
+{
+	float: right;
+}
+
+a {
+		color: black;
+		font-weight: bold;
+		text-decoration: none;
+}
+
+a:hover {
+		color: black;
+		text-decoration: none;
+}
+
+.urls_div {
+	text-align: center;
+	margin: 10px;
+}
+
+#photo1 .row .col
 {
     text-align: right;
-    background-color: lightBlue;
 }
 
+#photo1 .row .col img
+{
+    float: left;
+}
 
-#photo1
+#photo4 .row .col
 {
     text-align: left;
-    background-color: lightBlue;
 }
 
-#photo4
+#photo4 .row .col img
+{
+  	float: right;
+}
+
+#photo5 .row .col
 {
     text-align: right;
-    background-color: lightBlue;
 }
 
-#photo5
+#photo5 .row .col img
 {
-    text-align: left;
-    background-color: lightBlue;
+    float: left;
 }
 
 button
 {
 	background-color: darkRed;
+}
+
+button a {
+	color: white;
 	font-weight: bold;
 }
 
-button:hover
-{
+button:hover a {
+		color: black !important;
+		font-weight: bold;
+}
+
+button:hover {
 	background-color: pink;
-	color: blue;
-	font-weight: bold;
-}
-
-.hobby_content
-{
-	position: absolute;
-}
-
-#blog_link
-{
-	position: absolute;
-	margin-left: -1060px;
-	margin-top: 80px;
-}
-
-#certificate_header
-{
-	margin-top: -280px;
-	margin-left: 1020px;
-}
-
-#certificate_paragraph0
-{
-	position: absolute;
-	margin-top: -240px;
-	margin-left: 850px;
-}
-
-#certificate_paragraph1
-{
-	position: absolute;
-	margin-top: -217px;
-	margin-left: 990px;
-}
-
-#certificate_paragraph2
-{
-	position: absolute;
-	margin-top: -195px;
-	margin-left: 720px;
-}
-
-#certificate_paragraph3
-{
-	position: absolute;
-	margin-top: -173px;
-	margin-left: 895px;
-}
-
-#certificate_button
-{
-	position: absolute;
-	margin-left: 920px;
-	margin-top: 145px;
 }
 
 #splash_screen
@@ -148,13 +171,13 @@ button:hover
 	left: 0;
 	padding-top: 300px;
 	width: 100%;
-	height: 100vh;
+	height: 100%;
 	background-color: black;
 	text-align: center;
 	z-index: 1;
 }
 
-#splash_screen.display-none
+.display-none
 {
 	position: fixed;
 	top: 0;
@@ -170,6 +193,10 @@ button:hover
 
 @keyframes fadeIn
 {
+	from {
+		opacity: 0;
+	}
+
 	to
 	{
 		opacity: 1;
@@ -178,6 +205,6 @@ button:hover
 
 .fade-in
 {
-	opacity: 0;
+	color: white;
 	animation: fadeIn 1s ease-in forwards;
 }

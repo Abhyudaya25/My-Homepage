@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", (e)=>removesplashscreen());
 
 function removesplashscreen()
 {
-	setTimeout(()=>splash.classList.add("display-none"), 2000);
+	setTimeout(() => splash.classList.add("display-none"), 2000);
 }
 
 function playinfo()
